@@ -11,35 +11,80 @@
 using namespace std;
 
 double doubleInput();
-bool hasQuit();
+double stringToDouble(string _input);
 void rootMath(double s_input, double e_input);
 
 int main()
 {
-    cout << "Enter number you would like to square root" << endl;
+    cout << "Enter number you would like to square root (press q to quit)" << endl;
     double s_input = doubleInput();
-    cout << "Enter guess" << endl;
-    double e_input = doubleInput();
-
-    do
+    if (s_input < 0)
     {
-        rootMath(s_input, e_input);
-    } while (false);
-}
-
-//gets a valid double number from input stream and returns it
-double doubleInput()
-{
-    double input = 0;
-
-    while (!(cin >> input))
-    {
-        cout << "Please enter only numeric values" << endl;
-        cin.clear();
-        cin.ignore(123, '\n');
+        return 0;
     }
 
-    return input;
+    cout << "Enter guess (press q to quit)" << endl;
+    double e_input = doubleInput();
+    if (e_input < 0)
+    {
+        return 0;
+    }
+   
+    rootMath(s_input, e_input);
+
+    cout << endl;
+    cout << endl;
+    main();
+}
+
+//gets a double input or a q to quit
+double doubleInput()
+{
+    string inputString;
+    double input = -1;
+
+    cin >> inputString;
+
+    if (inputString == "q")
+    {
+        return -1;
+    }
+    else
+    {
+        input = stringToDouble(inputString);
+        if (input >= 0)
+        {
+            return input;
+        }
+        else
+        {
+            cout << "Please enter only positive numbers (press q to quit)" << endl;
+            return doubleInput();
+        }
+    }
+}
+
+//turns a string into a double, returns -1 if there is a failure
+double stringToDouble(string _input)
+{
+    int dot_count = 0;
+    for (int i = 0; i < _input.length(); i++)
+    {
+        if (_input.at(i) == '.')
+        {
+            dot_count++;
+        }
+        else if (!isdigit(_input.at(i)))
+        {
+            return -1;
+        }
+        
+        if (dot_count > 1)
+        {
+            return -1;
+        }
+    }
+    return stod(_input);
 }
 
 // This does the root math for the project
@@ -78,5 +123,5 @@ void rootMath(
         }
     }
 
-    cout << guess * _s << endl;
+    cout << "Solution: " << guess * _s << endl;
 }
