@@ -138,10 +138,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="homework3.cpp" />
+    <ClCompile Include="DiceRoller.cpp" />
+    <ClCompile Include="homework3part1.cpp" />
+    <ClCompile Include="homework3part2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="dice_part_1.txt" />
+    <Text Include="dice_part_2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DiceRoller.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

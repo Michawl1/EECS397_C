@@ -1,8 +1,2 @@
-﻿  homework3.cpp
-C:\Users\mthom\Git_Repos\EECS397_C\Homework\Homework3\homework3.cpp(36,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\mthom\Git_Repos\EECS397_C\Homework\Homework3\homework3.cpp(69,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\mthom\Git_Repos\EECS397_C\Homework\Homework3\homework3.cpp(94,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\mthom\Git_Repos\EECS397_C\Homework\Homework3\homework3.cpp(112,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\mthom\Git_Repos\EECS397_C\Homework\Homework3\homework3.cpp(130,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\mthom\Git_Repos\EECS397_C\Homework\Homework3\homework3.cpp(154,20): warning C4018: '<': signed/unsigned mismatch
+﻿  homework3part2.cpp
   Homework3.vcxproj -> C:\Users\mthom\Git_Repos\EECS397_C\Homework\Homework3\Debug\Homework3.exe
