@@ -1,0 +1,11 @@
+﻿  Lecture5_Code_1.cpp
+  Lecture5_Code_2.cpp
+  Lecture5_Code_3.cpp
+  Lecture5_Code_4.cpp
+  Lecture5_Code_5.cpp
+  Lecture5_Code_6.cpp
+  Lecture5_Code_7.cpp
+  Lecture5_InClassTemp.cpp
+C:\Users\mthom\Git_Repos\EECS397_C\Lectures\Lecture5\Lecture5\Lecture5_InClassTemp.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\mthom\Git_Repos\EECS397_C\Lectures\Lecture5\Lecture5\Lecture5_InClassTemp.cpp(16,5): error C3861: 'generate_images': identifier not found
+  Generating Code...
