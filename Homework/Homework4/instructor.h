@@ -17,4 +17,16 @@ public:
 		int _instructorID = 0,
 		string _name = "",
 		string _department = "");
+
+	int getInstructorID();
+
+	string getName();
+
+	string getDepartment();
+
+	void setInstructorID(int _instructorID);
+
+	void setName(string _name);
+
+	void setDepartment(string _department);
 };

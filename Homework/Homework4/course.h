@@ -20,7 +20,7 @@ private:
 
 	int m_roomNumber;
 
-	string m_instructorName;
+	Instructor m_instructorName;
 
 	vector<Student> m_enrolled;
 
@@ -30,8 +30,27 @@ public:
 		string _department = "",
 		int _number = 0,
 		string _building = "",
-		int _roomNumber = 0,
-		string _instructorName = 0);
+		int _roomNumber = 0);
+
+	string getTitle();
+
+	string getDepartment();
+
+	int getNumber();
+
+	int getRoomNumber();
+
+	Instructor getInstructorName();
+
+	void setTitle(string _title);
+
+	void setDepartment(string _department);
+
+	void setNumber(int _number);
+
+	void setRoomNumber(int _roomNumber);
+
+	void setInstructorName(Instructor _instructorName);
 
 	void addStudents(
 		vector<Student> _studentsToAdd);

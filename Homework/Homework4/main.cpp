@@ -38,11 +38,11 @@ int main(const int argc, const char** argv) {
 	cpp.addStudents(students_one);
 	cpp.addStudents(students_two);
 
-	std::cout << "This should return true: " << cpp.dropStudent(iayn);
-	std::cout << "This should return false: " << cpp.dropStudent(ash);
-	std::cout << "This should return false: " << cpp.dropStudent(iayn);
+	std::cout << "This should return true: " << cpp.dropStudent(iayn) << endl;
+	std::cout << "This should return false: " << cpp.dropStudent(ash) << endl;
+	std::cout << "This should return false: " << cpp.dropStudent(iayn) << endl;
 	cpp.addStudents(students_three);
-	std::cout << "This should return true:" << cpp.dropStudent(ash);
+	std::cout << "This should return true: " << cpp.dropStudent(ash) << endl;
 
 	cpp.printStudents();
 
