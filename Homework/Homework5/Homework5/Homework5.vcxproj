@@ -138,6 +138,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\administrator.cpp" />
+    <ClCompile Include="..\employee.cpp" />
+    <ClCompile Include="..\faculty.cpp" />
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\person.cpp" />
+    <ClCompile Include="..\research_assistant.cpp" />
+    <ClCompile Include="..\staff.cpp" />
+    <ClCompile Include="..\student.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\administrator.hpp" />
+    <ClInclude Include="..\employee.hpp" />
+    <ClInclude Include="..\faculty.hpp" />
+    <ClInclude Include="..\person.hpp" />
+    <ClInclude Include="..\research_assistant.hpp" />
+    <ClInclude Include="..\staff.hpp" />
+    <ClInclude Include="..\student.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,9 +1,16 @@
-#include "administrator.h"
+
+#include "faculty.hpp"
+#include "staff.hpp"
 #include <iostream>
 
 
 int main() {
+	Faculty f = Faculty();
+	Staff s = Staff();
 
+	std::cout << f.works_together(s) << std::endl;
+
+	/*
 	Administrator jing_li = Administrator("Computer Science", 80000, 12345, "Jing Li");
 
 	Faculty cenk = Faculty(12346, "Murat Cenk Cavusoglu", 50000, "Computer Science", "Professor", "Surgical Robotics");
@@ -45,12 +52,13 @@ int main() {
 	jing_li.addResearcher(russel);
 
 	std::cout << jing_li.print() << "\n";
+	*/
 
 	/*=================EXTRA CREDIT=================*/
 	/*=======UNCOMMENT THESE LINES TO ATTEMPT=======*/
-	ResearchAssistant tom_promoted = ResearchAssistant("Robotics", tom, jing_li);
-	std::cout << jing_li.print() << "\n";
+	//ResearchAssistant tom_promoted = ResearchAssistant("Robotics", tom, jing_li);
+	//std::cout << jing_li.print() << "\n";
 	/*==============================================*/
-
+	
 	return 0;
 }
