@@ -39,29 +39,28 @@ void Faculty::setResearchFocus(string _researchFocus)
 {
 	m_researchFocus = _researchFocus;
 }
-
-bool Faculty::works_together(Employee _other)
+bool Faculty::works_with(Faculty _other)
 {
-	string s = typeid(_other).name();
-
-	if (dynamic_cast<Faculty*>(_other) == nullptr)
+	if (_other.getDepartment() == this->getDepartment() &&
+		_other.getResearchFocus() == this->getResearchFocus())
 	{
-
+		return true;
 	}
 
-	if (s == "class Faculty")
-	{
-		if (_other.getDepartment() == this->getDepartment())
-		{
-			return true;
-		}
-	}
-	else
-	{
-		if (_other.getDepartment() == "")
-		{
-			return true;
-		}
-	}
 	return false;
+}
+
+bool Faculty::works_with(Employee _other)
+{
+	if (_other.getDepartment() == "")
+	{
+		return true;
+	}
+
+	return false;
+}
+
+string Faculty::toString()
+{
+	return "";
 }

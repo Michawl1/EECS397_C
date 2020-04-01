@@ -46,3 +46,8 @@ void Student::setGpa(double _gpa)
 {
 	m_gpa = _gpa;
 }
+
+string Student::toString()
+{
+	return "";
+}

@@ -22,6 +22,8 @@ public:
 	string getTitle();
 
 	void setTitle(string _title);
+	
+	bool works_with(Employee _other);
 
-	bool works_together(Employee _other);
+	string toString();
 };

@@ -24,4 +24,6 @@ public:
 
 	void setSalary(int _salary);
 	void setDepartment(string _department);
+
+	bool works_with(Employee _other);
 };

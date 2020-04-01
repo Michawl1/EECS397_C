@@ -34,3 +34,8 @@ void Employee::setDepartment(string _department)
 {
 	m_department = _department;
 }
+
+bool Employee::works_with(Employee _other)
+{
+	return _other.getDepartment() == this->getDepartment();
+}

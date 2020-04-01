@@ -30,4 +30,6 @@ public:
 	void setGraduationYear(int _graduationYear);
 	void setMajor(string _major);
 	void setGpa(double _gpa);
+
+	string toString();
 };

@@ -27,5 +27,8 @@ public:
 	void setPosition(string _position);
 	void setResearchFocus(string _researchFocus);
 
-	bool works_together(Employee _other);
+	bool works_with(Faculty _other);
+	bool works_with(Employee _other);
+
+	string toString();
 };

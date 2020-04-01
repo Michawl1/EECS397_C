@@ -25,7 +25,17 @@ void Staff::setTitle(string _title)
 	m_title = _title;
 }
 
-bool Staff::works_together(Employee _other)
+bool Staff::works_with(Employee _other)
 {
+	if (_other.getDepartment() == this->getDepartment())
+	{
+		return true;
+	}
 
+	return false;
+}
+
+string Staff::toString()
+{
+	return "";
 }
