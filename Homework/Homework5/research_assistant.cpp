@@ -33,10 +33,12 @@ m_area(_area)
 
 string ResearchAssistant::toString()
 {
-	return "";
-		/*
-		to_string(Student::getId()) + ": " +
-		Student::getName() + ". " +
-		Student::get
-		*/
+	string retString = Student::toString() + Staff::toString();
+
+	if (m_area != "")
+	{
+		retString += ", Area: " + m_area;
+	}
+
+	return retString;
 }

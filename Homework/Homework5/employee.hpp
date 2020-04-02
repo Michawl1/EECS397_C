@@ -26,4 +26,6 @@ public:
 	void setDepartment(string _department);
 
 	bool works_with(Employee _other);
+
+	string toString();
 };

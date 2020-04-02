@@ -21,4 +21,6 @@ public:
 
 	void setId(int _id);
 	void setName(string _name);
+
+	string toString();
 };

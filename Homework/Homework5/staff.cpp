@@ -37,5 +37,13 @@ bool Staff::works_with(Employee _other)
 
 string Staff::toString()
 {
-	return "";
+	string retString = Employee::toString();
+
+	if (m_title != "")
+	{
+		retString += ", Title: " + m_title;
+	}
+
+	return retString;
+		
 }

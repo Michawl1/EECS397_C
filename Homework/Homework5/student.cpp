@@ -49,5 +49,22 @@ void Student::setGpa(double _gpa)
 
 string Student::toString()
 {
-	return "";
+	string retString = Person::toString();
+
+	if (m_major != "")
+	{
+		retString += ", Major: " + m_major;
+	}
+
+	if (m_gpa != 0.0)
+	{
+		retString += ", GPA: " + to_string(m_gpa);
+	}
+
+	if (m_graduationYear != 0)
+	{
+		retString += ", Graduation Year: " + to_string(m_graduationYear);
+	}
+
+	return retString;
 }

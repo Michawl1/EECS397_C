@@ -39,3 +39,20 @@ bool Employee::works_with(Employee _other)
 {
 	return _other.getDepartment() == this->getDepartment();
 }
+
+string Employee::toString()
+{
+	string retString = Person::toString();
+
+	if (m_department != "")
+	{
+		retString += " Department: " + m_department;
+	}
+
+	if (m_salary != 0)
+	{
+		retString += ", Salary: " + to_string(m_salary);
+	}
+
+	return retString;
+}

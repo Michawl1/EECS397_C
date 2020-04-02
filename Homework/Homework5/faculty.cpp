@@ -62,5 +62,17 @@ bool Faculty::works_with(Employee _other)
 
 string Faculty::toString()
 {
-	return "";
+	string retString = Employee::toString();
+
+	if (m_position != "")
+	{
+		retString += ", Position: " + m_position;
+	}
+
+	if (m_researchFocus != "")
+	{
+		retString += ", Research Focus: " + m_researchFocus;
+	}
+
+	return retString;
 }

@@ -30,3 +30,10 @@ void Person::setName(string _name)
 {
 	m_name = _name;
 }
+
+string Person::toString()
+{
+	return
+		to_string(m_id) + ": " +
+		m_name + ". ";
+}
